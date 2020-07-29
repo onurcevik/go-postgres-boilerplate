@@ -44,6 +44,5 @@ func main() {
 	http.HandleFunc("/logout", handlers.LogoutHandler)
 	http.HandleFunc("/register", handlers.RegisterHandler)
 	http.HandleFunc("/dashboard", handlers.DashboardHandler)
-
 	http.ListenAndServe(":8080", nil)
 }
