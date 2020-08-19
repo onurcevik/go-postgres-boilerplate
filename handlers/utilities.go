@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/onurcevik/postgresboilerplate/database"
+	"github.com/onurcevik/go-postgres-boilerplate/database"
 )
 
 func getUserFromServer(req *http.Request) string {

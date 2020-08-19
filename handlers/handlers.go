@@ -7,7 +7,7 @@ import (
 
 	"text/template"
 
-	"github.com/onurcevik/postgresboilerplate/database"
+	"github.com/onurcevik/go-postgres-boilerplate/database"
 	uuid "github.com/satori/go.uuid"
 	"golang.org/x/crypto/bcrypt"
 )
@@ -70,7 +70,7 @@ func RegisterHandler(w http.ResponseWriter, r *http.Request) {
 			panic(err)
 		}
 
-		sID, _ := uuid.NewV4()
+		sID := uuid.NewV4()
 		c := &http.Cookie{
 			Name:  "session",
 			Value: sID.String(),
@@ -122,7 +122,7 @@ func LoginHandler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		sID, _ := uuid.NewV4()
+		sID := uuid.NewV4()
 		c := &http.Cookie{
 			Name:  "session",
 			Value: sID.String(),

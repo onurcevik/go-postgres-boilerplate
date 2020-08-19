@@ -8,8 +8,8 @@ import (
 	"strconv"
 
 	_ "github.com/lib/pq"
-	"github.com/onurcevik/postgresboilerplate/database"
-	"github.com/onurcevik/postgresboilerplate/handlers"
+	"github.com/onurcevik/go-postgres-boilerplate/database"
+	"github.com/onurcevik/go-postgres-boilerplate/handlers"
 )
 
 var (
